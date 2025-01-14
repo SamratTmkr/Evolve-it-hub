@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="UI Fresh -  uifresh.net">
+    <link rel="icon" href="https://uifresh.net/wp-content/uploads/2024/02/cropped-uifresh-favicon-new-1-32x32.png" sizes="32x32">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Form </title>
+    <link rel="stylesheet" href="effects.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/image.png" type="image/x-icon">
+
+
+</head>
+<style>
+
+   /* admiin */
+   @media (max-width: 768px) {
+    .p2 {
+        font-size: 1.2rem;
+    }
+
+    .p1 {
+        font-size: 1rem;
+    }
+
+    .admin {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .p2 {
+        font-size: 1rem;
+    }
+
+    .p1 {
+        font-size: 0.9rem;
+    }
+
+    .admin {
+        padding: 10px;
+    }
+}
+   /* close */
+   @media (max-width: 768px) {
+    .icon-box {
+        width: 120px; /* Adjust size for smaller screens */
+        padding: 10px;
+    }
+
+    .cc {
+        font-size: 2rem; /* Reduce icon size */
+    }
+
+    .icon-box p {
+        font-size: 0.9rem;
+    }
+}
+
+.radio-group input {
+    margin: 5px; /* Add space between the radio button and its label */
+}
+
+.radio-group span {
+    font-size: 16px; /* Ensure the label font size matches the form */
+    color: #333; /* Ensure label text color is consistent */
+}
+
+
+@media (max-width: 480px) {
+    
+    .icons {
+        gap: 10px; /* Reduce gap between icons */
+    }
+
+    .icon-box {
+        width: 80px; /* Smaller size for mobile screens */
+        padding: 8px;
+    }
+
+    .cc {
+        font-size: 1.5rem; /* Further reduce icon size */
+    }
+
+    .icon-box p {
+        font-size: 0.75rem; /* Smaller text for mobile */
+    }
+}
+
+/* Responsive styles for mobile screens */
+
+@media (max-width: 768px) {
+   
+   .main1{
+        max-width: 100%;
+   }
+    .form-group {
+        flex-direction: column; /* Stack inputs vertically */
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%; /* Ensure full width */
+    }
+
+    .radio-group .div1 {
+        display: flex; /* Align radio options vertically */
+        align-items: center;
+        justify-content:baseline;
+        margin: 0;
+
+    }
+  
+}
+.div1 input{
+    
+    max-width: 20px;
+}
+@media (max-width: 480px) {
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
+    }
+}
+
+.uf-contact-form-01 {
+    max-width: 900px;
+}
+
+/* General Styling */
+
+  /* Contact Form Section */
+  .contact-form {
+      padding: 50px 0;
+  }
+  
+  .custom-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 15px;
+  }
+  
+  .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      gap: 30px;
+  }
+  
+  /* Text Column */
+  .text-column {
+      flex: 1;
+      text-align: center;
+  }
+  
+  .form-heading {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: purple;
+
+  }
+  
+  .email-link {
+    text-decoration: none;
+    color: purple;
+
+  }
+  
+  .email-link:hover {
+      text-decoration: underline;
+  }
+  
+  .form-image {
+      margin-top: 20px;
+      max-width: 100%;
+      display: block;
+  }
+  
+  /* Form Column */
+  .form-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  /* Input Group */
+  .input-group {
+      margin-bottom: 20px;
+  }
+  
+  .input-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+  }
+  
+  .input-field {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  
+  .input-field:focus {
+    color: purple;
+      box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+      outline: none;
+  }
+  
+  .help-text {
+      font-size: 14px;
+      color: #6c757d;
+      margin-top: 5px;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+      background-color: purple;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+      background-color: #0056b3;
+  }
+  
+
+
+
+@media (min-width: 576px){
+     .uf-contact-form-01 {
+    min-height: 100vh;
+    align-content: center;
+} 
+}
+.uf-img-contact-form-01{
+      max-width: 100%;
+      animation: uf-animation 4s ease-in-out 1s infinite alternate;
+      position: relative;
+}
+.uf-ct-01-text-primary{
+      color: #864ef2;
+}
+.uf-ct-01-btn-primary{
+      background-color: #864ef2;
+      color: #fff;
+}
+.uf-ct-01-btn-primary:hover{
+      background-color: #641eec;
+      color: #fff;
+}
+
+@keyframes uf-animation {
+  0%   {top:0px;}
+  50%  {top:-30px;}
+  100% {top:0px;}
+}
+.form-control:focus {
+    border-color: #a979ff;
+    box-shadow: 0 0 0 .25rem rgb(103 58 183 / 21%);
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="mid">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="images/logo.png" alt="" width="100px" height="50px">
+
+                  </a>
+                <i class='bx bx-menu ffff' ></i>
+
+                </div>
+                <div class="navcontent">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Our Courses</a></li>
+                        <li><a href="sas.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="admission">
+                    <button>
+                        <a href="admission.html">admission</a>
+                    </button>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <section class="contact-form">
+        <div class="custom-container">
+            <div class="form-row">
+                <div class="text-column">
+                    <h2 class="form-heading">Contact Us</h2>
+                    <p>Or reach out manually to <a href="info@evolveithub.com" class="email-link">info@evolveithub.com</a></p>
+                    <img src="./images/plane.png" alt="Plane Icon" class="form-image">
+                </div>
+                <div class="form-column">
+                    <form>
+                        <div class="input-group">
+                            <label for="uf-imail" class="input-label">Email address</label>
+                            <input type="email" class="input-field" id="uf-imail" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="help-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="input-group">
+                            <label for="uf-iname" class="input-label">Your name</label>
+                            <input type="text" class="input-field" id="uf-iname">
+                        </div>
+                        <div class="input-group">
+                            <label for="uf-itextarea" class="input-label">Your message</label>
+                            <textarea class="input-field" id="uf-itextarea" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+<div class="admin">
+    <p class="p2">  Backed by Facts !</p>
+    <p> We are Best in what we do</p>
+    <p class="p1"> Fill the form and join mindrisers to elevate your expertise in your interest filed.</p>
+    </div>
+    
+    
+    <div class="banner">
+        <div class="icons">
+            <div class="icon-box">
+                <i class='bx bxs-book cc'></i>
+                <p>Acquire Knowledge</p>
+              </div>
+              <div class="icon-box">
+                <i class='bx bx-certification cc'></i>
+                <p>Get Certification</p>
+              </div>
+              <div class="icon-box">
+                <i class='bx bxs-rocket cc'></i>
+                <p>Kickstart Your Career</p>
+        </div>
+    </div>
+    
+        
+</div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2>Evolve IT Hub</h2>
+            <p>
+              Empowering growth with cutting-edge IT solutions. Building the future, one innovation at a time.
+            </p>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@evolveithub.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: Kathmandu, Nepal</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Evolve IT Hub. All Rights Reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+
+</html>

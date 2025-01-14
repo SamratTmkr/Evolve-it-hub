@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/image.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="effects.css">
+    <title>Testimonials section</title>
+  </head>
+  <style>
+
+:root {
+  --primary-color: purple;
+  --secondary-color: #e8e8e8;
+  --text-dark: #0f172a;
+  --text-light: #da3bc7;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section__container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.section__container h1 {
+  position: relative;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.section__container h1::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 5rem;
+  background-color: var(--primary-color);
+}
+
+.section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.section__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 5rem 2rem 2rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.section__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.section__card span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.section__card h4 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.section__card img {
+  margin-bottom: 1rem;
+  max-width: 100px;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.section__card h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.section__card:hover::before {
+  width: 400%;
+}
+
+.section__card:hover :is(h4, h5) {
+  color: var(--white);
+}
+
+.section__card:hover :is(p, h6) {
+  color: var(--secondary-color);
+}
+
+.section__card:hover img {
+  border-color: var(--white);
+}
+  </style>
+  <body>
+    <header>
+      <nav>
+          <div class="mid">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="" width="100px" height="50px">
+
+                </a>
+              <i class='bx bx-menu ffff' ></i>
+
+              </div>
+              <div class="navcontent">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="courses.html">Our Courses</a></li>
+                      <li><a href="sas.html">Testimonials</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="admission">
+                  <button>
+                      <a href="admission.html">admission</a>
+                  </button>
+              </div>
+
+          </div>
+
+      </nav>
+  </header>
+    <section class="section__container">
+      <h2>Testimonials</h2>
+      <h1>What our students say</h1>
+      <div class="section__grid">
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <h4>Love the simplicity</h4>
+          <p>
+            They understood our brand and created a stunning website design.
+            Professional, responsive, and on-time delivery. Highly recommended!
+          </p>
+          <img src="images/coding-freak-unscreen.gif" alt="user" />
+          <h5>Allan Collins</h5>
+          <h6>Managing Director</h6>
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <h4>Excellent Designs</h4>
+          <p>
+            Efficient, reliable, and results-oriented. Visually appealing
+            website, improved online visibility. Highly recommended!
+          </p>
+          <img src="images/coding-freak-unscreen.gif" alt="user" />
+          <h5>Tanya Grant</h5>
+          <h6>Ceo & Founder</h6>
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <h4>Efficient and Reliable</h4>
+          <p>
+            Best decision we made. Stunning website, exceptional support. Always
+            available and prompt issue resolution. Hassle-free experience!
+          </p>
+          <img src="images/coding-freak-unscreen.gif" alt="user" />
+          <h5>Clay Washington</h5>
+          <h6>Fashion Designer</h6>
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <h4>Efficient and Reliable</h4>
+          <p>
+            Best decision we made. Stunning website, exceptional support. Always
+            available and prompt issue resolution. Hassle-free experience!
+          </p>
+          <img src="images/coding-freak-unscreen.gif" alt="user" />
+          <h5>Clay Washington</h5>
+          <h6>Fashion Designer</h6>
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <h4>Efficient and Reliable</h4>
+          <p>
+            Best decision we made. Stunning website, exceptional support. Always
+            available and prompt issue resolution. Hassle-free experience!
+          </p>
+          <img src="images/coding-freak-unscreen.gif" alt="user" />
+          <h5>Clay Washington</h5>
+          <h6>Fashion Designer</h6>
+        </div>
+        <div class="section__card">
+          <span><i class="ri-double-quotes-l"></i></span>
+          <h4>Efficient and Reliable</h4>
+          <p>
+            Best decision we made. Stunning website, exceptional support. Always
+            available and prompt issue resolution. Hassle-free experience!
+          </p>
+          <img src="images/coding-freak-unscreen.gif" alt="user" />
+          <h5>Clay Washington</h5>
+          <h6>Fashion Designer</h6>
+        </div>
+      </div>
+    </section>
+    <div class="admission" style="display: flex; justify-content: center; margin: 20px;">
+      <button>
+          <a href="">View More</a>
+      </button>
+  </div>
+
+  <!-- footer  -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>Evolve IT Hub</h2>
+        <p>
+          Empowering growth with cutting-edge IT solutions. Building the future, one innovation at a time.
+        </p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@evolveithub.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: Kathmandu, Nepal</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Evolve IT Hub. All Rights Reserved.</p>
+    </div>
+  </footer>
+  </body>
+</html>
